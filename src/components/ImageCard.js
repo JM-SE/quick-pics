@@ -1,3 +1,4 @@
+import './css/ImageCard.css';
 import React from 'react';
 
 class ImageCard extends React.Component {
@@ -21,8 +22,21 @@ class ImageCard extends React.Component {
     render() {
         const { description, urls } = this.props.image;
         return (
-            <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
+            <div
+                className="image-card"
+                style={{ gridRowEnd: `span ${this.state.spans}` }}
+            >
                 <img ref={this.imageRef} alt={description} src={urls.regular} />
+                <div className="overlay">
+                    <a
+                        className="text-overlay"
+                        href={urls.regular}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to enlarge
+                    </a>
+                </div>
             </div>
         );
     }
