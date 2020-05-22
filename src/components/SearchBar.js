@@ -6,9 +6,9 @@ class SearchBar extends React.Component {
 
     renderNoResult() {
         if (this.props.images.length === 0 && this.state.submitted === 1) {
-            return <div>No results.</div>;
-        } else {
-            return <div></div>;
+            return (
+                <div className="ui pointing red basic label">No results.</div>
+            );
         }
     }
 
