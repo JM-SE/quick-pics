@@ -14,7 +14,7 @@ User can search by a keyword and the quantity of photos.
 -   Search history.
 -   Favourites saves.
 
-## Run project locally
+### Run project locally
 
 In the project directory, run:
 
